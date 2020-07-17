@@ -13,10 +13,10 @@ const tutorials = [
 
 const titleCased = (input) => {
   return tutorials.map ( name => {
-    let letters = name.split(' ')
-    let capitalizedLetter = 
-      letters.map( letter => letter.charAt(0).toUpperCase() + letter.slice(1) )
-    let response = capitalizedLetter.join(' ')
+    let words = name.split(' ')
+    let capitalizedWord = 
+      words.map( word => word.charAt(0).toUpperCase() + word.slice(1) )
+    let response = capitalizedWord.join(' ')
     return response
   })
 }
