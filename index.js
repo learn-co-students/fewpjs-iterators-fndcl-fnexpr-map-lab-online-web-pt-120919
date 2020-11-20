@@ -12,13 +12,18 @@ const tutorials = [
 ];
 
 const titleCased = () => {
+//   #map over tutorials to get to each individual string
   return tutorials.map( course => {
+//     #let words equal each individual word in each string split turn into an array with split by the space 
     let words = course.split(' ')
+//     #map over the words and at first letter turn to uppercase then add the rest of the word
     let capitalizedWord =
       words.map( word => word.charAt(0).toUpperCase() + word.slice(1) )
+//     #take that array of each word and turn it back into a string seperated by space
     let newTitle = capitalizedWord.join(' ')
-    
+//     #return the string 
     return newTitle
 
 })
+//   #return the array of strings in tutorials look at line 16. return tutorials.map( course => {
 }
